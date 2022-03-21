@@ -259,8 +259,14 @@ def average(numbers):
     (Think of the best way to handle an empty input list, though,
     a feel free to provide a good solution here.)
     """
+    total = 0
 
-    return 0
+    for number in numbers:
+        total += number
+    
+    total = total / len(numbers)
+
+    return total
 
 
 def join_strings_with_comma(words):
