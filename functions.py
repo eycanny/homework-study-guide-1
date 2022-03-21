@@ -64,6 +64,15 @@ PART TWO:
 
 """
 
+def hello_world():
+    print("Hello World")
+
+def say_hi(name):
+    print(f"Hi {name}")
+
+def print_product(int1, int2):
+    print(int1 * int2)
+
 ###############################################################################
 
 # PART ONE
