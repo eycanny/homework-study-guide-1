@@ -318,15 +318,9 @@ def reverse_list(items):
         ['cherry', 'berry', 'apple']
         >>> orig
         ['apple', 'berry', 'cherry']
+    
     """
-    i = -1
-
-    for item in items:
-        items[i:i] = item
-        i = i - 1
-        del items[0]
-
-    return items
+    return items[::-1]
 
 
 def reverse_list_in_place(items):
@@ -349,7 +343,30 @@ def reverse_list_in_place(items):
         ['I', 'love', 'cookies']
     """
 
-    return []
+    # #get fixed length of list
+    # count = 0 
+    
+    # for item in items:
+    #     count += 1
+
+    # #secondary counter, position definer    
+    # i = 0
+    # n = -1
+    
+    # #while i is less than length of original list, resulting in almost fully reversed list
+    # while i < count:
+    #     #insert first item of list to n position from back of list
+    #     items[n:n] = [items[0]]
+    #     #increment secondary counter
+    #     i += 1
+    #     #remove duplicate item from front
+    #     del items[0]
+    
+    # #move the last item to the front
+    # last_item = items.pop()
+    # items[0:0] = [last_item]
+    
+    # return items
 
 
 def duplicates(items):
