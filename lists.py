@@ -368,6 +368,11 @@ def reverse_list_in_place(items):
     
     # return items
 
+    for i in range(len(items) // 2):
+        temp = items[i]
+        items[i] = items[(i + 1) * -1]
+        items[(i + 1) * -1] = temp
+
 
 def duplicates(items):
     """Return list of words from input list which were duplicates.
