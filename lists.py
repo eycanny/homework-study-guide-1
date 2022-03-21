@@ -285,8 +285,18 @@ def join_strings_with_comma(words):
         >>> join_strings_with_comma(["Pretzel"])
         'Pretzel'
     """
+    new_string = ""
+    i = 0
 
-    return ""
+    while i < len(words):
+        if i < (len(words) - 1):
+            new_string = new_string + words[i] + ", "
+            i += 1
+        else:
+            new_string = new_string + words[i]
+            i += 1
+
+    return new_string
 
 
 def reverse_list(items):
@@ -309,8 +319,14 @@ def reverse_list(items):
         >>> orig
         ['apple', 'berry', 'cherry']
     """
+    i = -1
 
-    return []
+    for item in items:
+        items[i:i] = item
+        i = i - 1
+        del items[0]
+
+    return items
 
 
 def reverse_list_in_place(items):
