@@ -97,16 +97,6 @@ def total_meal_price(price, tax=0.15):
     return price + (price * tax)
 
 def sign_and_parity(integer):
-    """Write a function called 'sign_and_parity' that takes an integer as an
-#    argument and returns two pieces of information as strings --- "Positive"
-#    or "Negative" and "Even" or "Odd". The two strings should be returned in
-#    a list.
-#
-#    Then, write code that shows the calling of this function on a number and
-#    unpack what is returned into two variables --- sign and parity (whether
-#    it's even or odd). Print sign and parity.
-
-    """
     sign_and_parity = []
 
     if integer >= 0:
@@ -120,6 +110,13 @@ def sign_and_parity(integer):
         sign_and_parity.append("Odd")
 
     print(sign_and_parity)
+
+def full_title(name, job_title="Engineer"):
+    return str(job_title) + " " + str(name)
+
+def write_letter(name, job_title, sender_name):
+    title = full_title(name, job_title)
+    print(f"Dear {title}, I think you are amazing! Sincerely, {sender_name}")
 
 ###############################################################################
 
