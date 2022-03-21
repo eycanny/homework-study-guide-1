@@ -93,6 +93,34 @@ def is_divisible_by_three(integer):
 def num_spaces(sentence):
     return sentence.count(" ")
 
+def total_meal_price(price, tax=0.15):
+    return price + (price * tax)
+
+def sign_and_parity(integer):
+    """Write a function called 'sign_and_parity' that takes an integer as an
+#    argument and returns two pieces of information as strings --- "Positive"
+#    or "Negative" and "Even" or "Odd". The two strings should be returned in
+#    a list.
+#
+#    Then, write code that shows the calling of this function on a number and
+#    unpack what is returned into two variables --- sign and parity (whether
+#    it's even or odd). Print sign and parity.
+
+    """
+    sign_and_parity = []
+
+    if integer >= 0:
+        sign_and_parity.append("Positive")
+    else:
+        sign_and_parity.append("Negative")
+
+    if integer % 2 == 0:
+        sign_and_parity.append("Even")
+    else:
+        sign_and_parity.append("Odd")
+
+    print(sign_and_parity)
+
 ###############################################################################
 
 # PART ONE
