@@ -113,8 +113,16 @@ def largest_int(numbers):
         >>> largest_int([]) is None
         True
     """
+    if numbers == []:
+        return None
 
-    return 0
+    largest_int = numbers[0]
+
+    for number in numbers:
+        if number > largest_int:
+            largest_int = number
+    
+    return largest_int
 
 
 def halvesies(numbers):
