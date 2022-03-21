@@ -73,6 +73,17 @@ def say_hi(name):
 def print_product(int1, int2):
     print(int1 * int2)
 
+def repeat_string(string, num):
+    print(string*num)
+
+def print_sign(integer):
+    if integer > 0:
+        print("Higher than 0")
+    elif integer < 0:
+        print("Lower than 0")
+    else:
+        print("Zero")
+
 ###############################################################################
 
 # PART ONE
