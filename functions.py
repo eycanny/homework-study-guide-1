@@ -84,6 +84,15 @@ def print_sign(integer):
     else:
         print("Zero")
 
+def is_divisible_by_three(integer):
+    if integer % 3 == 0:
+        return True
+    else:
+        return False
+
+def num_spaces(sentence):
+    return sentence.count(" ")
+
 ###############################################################################
 
 # PART ONE
