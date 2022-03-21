@@ -207,8 +207,15 @@ def mult_numbers(numbers):
         >>> mult_numbers([])
         1
     """
+    if numbers == []:
+        return 1
+    
+    product = 1
 
-    return None
+    for number in numbers:
+        product = product * number
+    
+    return product
 
 
 def join_strings(words):
