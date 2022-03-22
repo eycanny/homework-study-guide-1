@@ -335,11 +335,9 @@ def reverse_list_in_place(items):
     
         >>> orig = [1, 2, 3]
         >>> reverse_list_in_place(orig)
-        >>> orig
         [3, 2, 1]
         >>> orig = ["cookies", "love", "I"]
         >>> reverse_list_in_place(orig)
-        >>> orig
         ['I', 'love', 'cookies']
     """
 
